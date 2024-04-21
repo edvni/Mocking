@@ -1,7 +1,7 @@
 
 package org.example;
 
-public class TilaustenKäsittely {
+public class TilaustenKasittely {
 	
     private IHinnoittelija hinnoittelija;
 
@@ -9,7 +9,7 @@ public class TilaustenKäsittely {
         this.hinnoittelija = hinnoittelija;
     }
 
-    public void käsittele(Tilaus tilaus) {
+    public void kasittele(Tilaus tilaus) {
 
         float alennusProsentti = hinnoittelija.getAlennusProsentti(
                 tilaus.getAsiakas(), tilaus.getTuote());
