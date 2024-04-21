@@ -13,4 +13,16 @@ public class FakeHinnoittelija implements IHinnoittelija {
     public float getAlennusProsentti(Asiakas asiakas, Tuote tuote) {
         return alennus;
     }
+    @Override
+    public void setAlennusProsentti(Asiakas asiakas, float prosentti) {
+        alennus = prosentti;
+    }
+
+    public void aloita() {
+        System.out.println("Aloitetaan hinnoittelu.");
+    }
+
+    public void lopeta() {
+        System.out.println("Lopetetaan hinnoittelu.");
+    }
 }
